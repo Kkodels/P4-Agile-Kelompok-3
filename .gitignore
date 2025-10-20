@@ -1,5 +1,37 @@
+# Node / package managers
 node_modules/
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+
+# Build artifacts
 dist/
+build/
+*.tsbuildinfo
+
+# Testing
 coverage/
+.jest-cache/
+.jest/
+
+# Env & local
 .env
+.env.*
 .DS_Store
+Thumbs.db
+
+# Editors
+.vscode/
+.idea/
+
+# Lint / tools
+.eslintcache
+
+# Mock & temp logs (proyek kamu)
+mock_logs/
+logs/
+tmp/
+
+# System
+*.swp
