@@ -29,7 +29,6 @@ Thumbs.db
 .eslintcache
 
 # Mock & temp logs (proyek kamu)
-mock_logs/
 logs/
 tmp/
 
