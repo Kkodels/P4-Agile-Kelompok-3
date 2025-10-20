@@ -7,7 +7,11 @@
     "doc": "docs"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint:api": "spectral lint openapi/api.yaml",
+    "mock": "prism mock openapi/api.yaml",
+    "test": "jest",
+    "dev:orders": "tsx services/order-service/src/index.ts",
+    "dev:notif": "tsx services/notification-service/src/index.ts"
   },
   "keywords": [],
   "author": "",
@@ -37,14 +41,4 @@
     "tsx": "^4.20.6",
     "typescript": "^5.9.3"
   }
-  {
-  "scripts": {
-    "dev:orders": "tsx services/order-service/src/index.ts",
-    "dev:notif": "tsx services/notification-service/src/index.ts",
-    "test": "jest",
-    "lint:api": "spectral lint openapi/api.yaml",
-    "mock": "prism mock openapi/api.yaml"
-  }
-}
-
 }
